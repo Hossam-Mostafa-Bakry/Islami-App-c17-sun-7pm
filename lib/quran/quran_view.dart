@@ -21,6 +21,7 @@ class QuranView extends StatelessWidget {
         ),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12),
@@ -56,6 +57,11 @@ class QuranView extends StatelessWidget {
                   )
                   .setHorizontalPaddingOnWidget(12),
             ),
+          ),
+          SizedBox(height: 10),
+          Text(
+            "Most Recently",
+            style: TextStyle(color: ColorPallete.primaryColor),
           ),
         ],
       ).setHorizontalPaddingOnWidget(20),
