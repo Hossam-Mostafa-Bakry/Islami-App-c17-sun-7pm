@@ -14,6 +14,7 @@ class QuranView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        color: ColorPallete.primaryColor,
         image: DecorationImage(
           image: Assets.images.quranBackgroundImg.provider(),
           fit: BoxFit.cover,
