@@ -7,6 +7,8 @@ import 'package:islami_app_c17_sun_7pm/sebha/sebha_view.dart';
 import 'package:islami_app_c17_sun_7pm/time/time_view.dart';
 
 class LayoutView extends StatefulWidget {
+  static const String routeName = '/layout';
+
   const LayoutView({super.key});
 
   @override
