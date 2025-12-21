@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app_c17_sun_7pm/layout/layout_view.dart';
+import 'package:islami_app_c17_sun_7pm/main.dart';
 
 class SplashView extends StatefulWidget {
+  static const String routeName = '/splash';
+
   const SplashView({super.key});
 
   @override
@@ -11,24 +14,30 @@ class SplashView extends StatefulWidget {
 class _SplashViewState extends State<SplashView> {
   /// Flutter Life Cycle
   ///
+  /// first function to call
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 2), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) {
-            return LayoutView();
-          },
-        ),
-      );
-    });
-  }
 
-  @override
-  void dispose() {
-    super.dispose();
+    // context
+    // Navigation
+    // inherited widget
+
+    Future.delayed(Duration(seconds: 2), () {
+      /// Navigator.pushReplacement
+      Navigator.pushReplacementNamed(
+        navigatorKey.currentContext!,
+        LayoutView.routeName,
+      );
+      // Navigator.pushReplacement(
+      //   context,
+      //   MaterialPageRoute(
+      //     builder: (context) {
+      //       return LayoutView();
+      //     },
+      //   ),
+      // );
+    });
   }
 
   @override
