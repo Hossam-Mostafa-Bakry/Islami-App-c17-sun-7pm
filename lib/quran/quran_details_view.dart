@@ -20,7 +20,7 @@ class _QuranDetailsViewState extends State<QuranDetailsView> {
     SuraData suraData = ModalRoute.of(context)!.settings.arguments as SuraData;
 
     /// load data from assets files
-    _loadQuranText(suraData.suraNumber.toString());
+    if (verses.isEmpty) _loadQuranText(suraData.suraNumber.toString());
 
     return Scaffold(
       backgroundColor: Color(0xFF202020),
@@ -87,5 +87,6 @@ class _QuranDetailsViewState extends State<QuranDetailsView> {
 
     verses = quranText.split("\n");
     setState(() {});
+    print(quranText);
   }
 }
