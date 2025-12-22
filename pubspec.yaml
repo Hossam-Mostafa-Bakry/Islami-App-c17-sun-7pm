@@ -18,6 +18,7 @@ dependencies:
   flutter_native_splash: ^2.4.6
   flutter_svg:
   flutter_bounceable: ^1.2.0
+  carousel_slider: ^5.1.1
 
 dev_dependencies:
   flutter_test:
@@ -44,7 +45,8 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - assets/files/
+    - assets/files/quran/
+    - assets/files/hadith/
 
   fonts:
     - family: Janna
